@@ -1,8 +1,15 @@
 package getStarted;
 
+import java.util.Scanner;
+
 public class demo {
 
 	public static void main(String[] args) {
-		System.out.println("Welcome to CSC 305");
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Which CSC class are you in?");
+		String input = keyboard.nextLine();
+
+		System.out.println("Welcome to CSC "+ input);
+
 	}
 }
